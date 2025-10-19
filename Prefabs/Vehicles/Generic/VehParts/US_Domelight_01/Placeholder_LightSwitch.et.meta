@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{074A4D1033C65DA7}Prefabs/Vehicles/Generic/VehParts/US_Domelight_01/Placeholder_LightSwitch.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{D06C222F2BB4A491}Prefabs/Vehicles/Tracked/BMP1/Configs/CargoCompartment_BMP1_Right.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,22 @@
+GenericEntity : "{3AE45A61B121F97B}Prefabs/Weapons/Cannons/Cannon_2A46/Cannon_2A28_base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Materials {
+    MaterialAssignClass "{64E93AAADCC3CC4C}" {
+     SourceMaterial "bmp1_turret"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    MuzzleComponent "{50F64C4591CD7AA6}" {
+     MagazineWell MagazineWellSPC_2A28HE "{655614118C01FD26}" {
+     }
+     MagazineTemplate "{79785294E3AE7BB2}Prefabs/Weapons/Magazines/2A46/Box_73mm_2A28_HE_20rnd.et"
+    }
+   }
+  }
+ }
+}

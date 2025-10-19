@@ -1,0 +1,14 @@
+GenericEntity : "{421178F1DEC184E8}Prefabs/Vehicles/Tracked/BMP1/VehParts/Turret/BMP1_Turret_Back_FIA.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{5E587134AFC54EF1}" {
+     SourceMaterial "bmp1_turret"
+     AssignedMaterial "{8C745FCD1E00EF77}Assets/Vehicles/Tracked/BMP1/Data/Desert/FIA/bmp1_turret_FIA_desert.emat"
+    }
+   }
+  }
+ }
+ coords -20.542 -3.392 3.868
+}

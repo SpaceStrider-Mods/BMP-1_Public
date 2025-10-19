@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{63825445F342F6BD}Assets/Vehicles/Tracked/BMP1/Data/Desert/bmp1_hull_FIA_desert.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+ }
+}

@@ -1,0 +1,57 @@
+GenericEntity : "{CD609D6F3A054B14}Prefabs/Weapons/Core/Armament_Pod_Base.et" {
+ ID "629D11C8BD6AE717"
+ components {
+  MeshObject "{629D11CADAD0C383}" {
+   Object "{703CBD5B9F3A18DF}Assets/Weapons/Launchers/9K11/9K11_Mount.xob"
+  }
+  RigidBody "{629D11CA43ADFC85}" {
+   Enabled 0
+  }
+  WCS_Armament_WeaponComponent "{629D11C992611C79}" {
+   Enabled 1
+   m_sName "9K11"
+   m_DefaultProjectile "{34E865245A558C62}Prefabs/Weapons/Ammo/Ammo_Missile_9K11.et"
+   m_fLaunchOffset 1
+  }
+  SlotManagerComponent "{629D11C99AEE634A}" {
+   Enabled 1
+   Slots {
+    WCS_Armament_ProjectileSlotInfo W_0 {
+     PivotID "w_rocketpos"
+    }
+   }
+  }
+  ActionsManagerComponent "{629D11CAB6B28AE6}" {
+   ActionContexts {
+    UserActionContext "{629D11D46C8F2AA6}" {
+     ContextName "rearm_pod_01"
+     Position PointInfo "{6152B772E6638695}" {
+     }
+    }
+    UserActionContext "{631B65CE70DCB111}" {
+     ContextName "rearm_pod_02"
+     Position PointInfo "{631B65CE70DCB0E4}" {
+      Offset -0.004 0.2856 0.4886
+      Angles 90 0 0
+     }
+     Omnidirectional 0
+    }
+   }
+   additionalActions {
+    WCS_RearmPodAtRepairStationAction "{629D11D464DEC282}" {
+     m_sProjectileToRearm "{34E865245A558C62}Prefabs/Weapons/Ammo/Ammo_Missile_9K11.et"
+    }
+    WCS_Armament_RearmFromVehicleAction "{64F3412FDAEC9699}" : "{CBDA5C3C1E6E643D}Prefabs/Weapons/Core/Configs/WCS_Armament_RearmFromVehicleAction.conf" {
+     ParentContextList {
+      "missileHatch"
+     }
+     m_sCompatibleProjectiles {
+      "{34E865245A558C62}Prefabs/Weapons/Ammo/Ammo_Missile_9K11.et"
+     }
+    }
+   }
+   AllowCrossHierarchy 1
+  }
+ }
+ coords 76.827 2.822 1245.017
+}
