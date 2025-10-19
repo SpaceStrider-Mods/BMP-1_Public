@@ -1,0 +1,33 @@
+Tank : "{0144F571F1998FC4}Prefabs/Vehicles/Tracked/BMP1/BMP1_FIA.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{5E5871351ABC14E2}" {
+     SourceMaterial "bmp1_hull"
+     AssignedMaterial "{63825445F342F6BD}Assets/Vehicles/Tracked/BMP1/Data/Desert/FIA/bmp1_hull_FIA_desert.emat"
+    }
+    MaterialAssignClass "{631E0BEF227A31AD}" {
+     SourceMaterial "bmp_wheels"
+     AssignedMaterial "{47A596669B0676E1}Assets/Vehicles/Tracked/BMP1/Data/Desert/bmp_wheels_desert.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_Image "{6C3C37E3190C6999}UI/Textures/EditorPreviews/Vehicles/Tracked/BMP1/BMP1_FIA_Desert.edds"
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{2300339CD5C1F08E}Prefabs/Vehicles/Tracked/BMP1/VehParts/Turret/BMP1_Turret_FIA_Desert.et"
+    }
+    RegisteringComponentSlotInfo Commander_Turret {
+     Prefab "{4CFAAB1398FC583F}Prefabs/Vehicles/Tracked/BMP1/VehParts/CommanderTurret/BMP1_Commander_Turret_FIA_Desert.et"
+    }
+   }
+  }
+ }
+ coords 4.206 0.225 1.586
+}

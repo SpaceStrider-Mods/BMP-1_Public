@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{E210FB0F6BFF749D}Prefabs/Vehicles/Tracked/BMP1/VehParts/Turret/BMP1P_Turret_Back_FIA_Desert.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

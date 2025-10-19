@@ -1,0 +1,56 @@
+GenericEntity : "{F9E1A46E3ABA116F}Prefabs/Weapons/Core/Magazine_Base.et" {
+ ID "CA6BE4D6BB2D1077"
+ components {
+  AICombatPropertiesComponent "{59CE86D96C332DDF}" {
+   Priority 25
+   PriorityAgainstVehicles 100
+   UsedAgainst 12
+  }
+  InventoryMagazineComponent "{51EED12B803954CC}" {
+   Attributes SCR_ItemAttributeCollection "{51EED12B86960275}" {
+    ItemDisplayName UIInfo "{51FEE38527BFEA5B}" {
+     Name "2A28 HEAT"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5E52C1C4DF2584A3}" {
+     Weight 5
+    }
+    m_Size SLOT_2x2
+   }
+   WeightPerAmmo 3
+  }
+  MagazineComponent "{CA6BE4D6B4DAFD69}" {
+   MagazineWell MagazineWellSPC_2A28 "{655614CB85D5DA02}" {
+   }
+   UIInfo MagazineUIInfo "{57126733AA401586}" {
+    Name "#SPC-Weapon_2A28_Name #SPC-AmmunitionID_PG9 #SPC-AmmunitionType_HEATFS"
+    Description ""
+    m_sAmmoCaliber "#SPC-AmmunitionID_73mm"
+    m_sAmmoType "#SPC-AmmunitionType_HEATFS"
+    m_bShowAmmoTypeText 1
+    m_eAmmoTypeFlags 48
+   }
+   ItemModel "{D316E62060BC454B}Assets/Weapons/Magazines/Magazine_M242/Magazine_25x137_M242_150rnd_HEIT.xob"
+   MaxAmmo 20
+   AmmoConfig "{72337A9B259E8716}Configs/Weapons/Ammo/Ammo_2A28_73mm.conf"
+   AmmoMapping {
+    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+   }
+  }
+  MeshObject "{CA6BE4D6A23F8EF0}" {
+   Object "{AAD3D58CE0E6C60F}Assets/Weapons/Magazines/Magazine_M242/Magazine_25x137_M242_dummy.xob"
+  }
+  RigidBody "{571B0382401B1385}" {
+   Mass 40
+  }
+  ActionsManagerComponent "{F092E6B0537754FD}" {
+   additionalActions {
+    SCR_AttachItemFromInventoryAction "{5A1E58F7D9256374}" {
+     ParentContextList {
+      "Commander_Idle"
+     }
+    }
+   }
+   AllowCrossHierarchy 1
+  }
+ }
+}

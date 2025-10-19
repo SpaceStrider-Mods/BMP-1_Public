@@ -1,0 +1,135 @@
+Projectile : "{21B44D28139D0A14}Prefabs/Weapons/Core/Armament_Ammo_Missile_Base.et" {
+ ID "62EB07A083C431D2"
+ components {
+  SCR_ShellSoundComponent "{62EB07A083C43120}" {
+   Filenames +{
+   }
+  }
+  CollisionTriggerComponent "{631B71C010A88212}" {
+   PROJECTILE_EFFECTS {
+    ExplosionEffect "{631B71C010A885EC}" {
+     EffectPrefab "{4454E244BB74B8DA}Prefabs/Weapons/Warheads/9M133/Warhead_HEAT_9M133.et"
+     ParticleEffect "{5D84CBFD5BA355A1}Particles/Weapon/Explosion_9M133.ptc"
+     SoundEvent "SOUND_EXPLOSION"
+    }
+   }
+   SafetyDistance 20
+  }
+  InventoryItemComponent "{62EB07A083C43139}" {
+   Enabled 1
+   Attributes SCR_ItemAttributeCollection "{62EB07A083C43135}" {
+    ItemDisplayName UIInfo "{62EB07A083C43136}" {
+     Name "9M113"
+     Description "Missile go brr"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{64F13C85BB2F7661}" {
+     Weight 14
+     SizeSetupStrategy Manual
+     ItemDimensions 20 20 20
+     ItemVolume 1200
+     DimensionScaler 1
+     RestingAdditiveRotationLS 0 0 0
+     RestingAdditiveOffsetLS 0 0 0
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{62EB07A083C43132}" {
+      CameraDistanceToItem 2
+     }
+    }
+    m_SlotType SLOT_BACKPACK
+    m_bDraggable 0
+   }
+  }
+  MagazineComponent "{62EB07A083C4310E}" {
+   Enabled 0
+  }
+  MeshObject "{62EB07A083C43105}" {
+   Object "{2F1CFB3138899EC1}Assets/Weapons/Magazine/9M113/9M113_Object.xob"
+  }
+  MissileMoveComponent "{62EB07A083C43107}" {
+   InitSpeed 10
+   InitSpeedVariation 0
+   Mass 18.9
+   TimeToLive 60
+   ProjectileEffects {
+    AIHitEffect "{631B71C010A885FC}" {
+    }
+   }
+   BallisticTableConfig "{04AC3D52618E810C}Configs/Weapons/AIBallisticTables/AIBT_Rocket_PG7VM.conf"
+   ThrustInitTime 0.1
+   ThrustTime 3.9
+   ThrustForce 2000
+   ForwardAirFriction 0.12
+   SideAirFriction 0.08
+   AlignTorque 0.35
+   DistanceEnableGravitation 2
+  }
+  RigidBody "{62EB07A083C43117}" {
+   Mass 14
+  }
+  RocketTraceEffectComponent "{631B71C010A885F2}" {
+   Enabled 0
+   ParticleEffect "{D116F91880C1A218}Particles/Weapon/Trail_AGM-114.ptc"
+   EffectOrientUp 0
+  }
+  WCS_Armament_BeamRidingGroundMissileFlightComputerComponent "{631B71C010A885F7}" {
+  }
+  WCS_Armament_BeamRidingSeekerComponent "{631B71C010A885C9}" {
+   m_fBeamThickness 10
+   m_iSensitivity 0.6
+   m_fTargetCheckInterval 0.1
+  }
+  WCS_Armament_MissileMovementComponent "{631B71C010A885C8}" {
+   m_fMaxDeflection 1
+   m_fDisplacementFactor 1
+   m_fRotationFactor 7
+   m_fGoStraightForXSeconds 0.5
+  }
+  WCS_Armament_ProjectileUIInfoComponent "{631B71C010A885CA}" {
+   m_Name "9K11"
+   m_eAmmoTypeFlags HEAT
+  }
+  WCS_Armament_RocketTraceEffectComponent "{631B71C010A885CC}" {
+   m_Phases {
+    WCS_Armament_RocketTracePhase "{631B71C010A885C2}" {
+     m_fDuration -1
+     m_Particles {
+      WCS_Armament_RocketTracePhaseParticle "{631B71C010A885C4}" {
+       m_Particle "{B74D72BDA6923352}Particles/Weapon/Trail_9M133.ptc"
+       m_vPosition 0 0 -0.038
+       m_vRotation 0 0 0
+      }
+     }
+    }
+   }
+   m_ExitParticle "{5CCCA7D0CC72234C}Particles/Weapon/Muzzle_9m133.ptc"
+   m_ExitParticlePosition 0 0.277 -0.685
+  }
+  WeaponComponent "{631B71C010A885D8}" {
+   WeaponType None
+   shouldHandleObstruction 0
+   WeaponSlotType "primary"
+  }
+  ActionsManagerComponent "{62EB07A083C43169}" {
+   Enabled 1
+  }
+  WeaponAnimationComponent "{631B71C010A885AD}" {
+   Enabled 0
+   AnimGraph "{0292B12F97C52891}Assets/Weapons/Explosives/workspace/M15AT_mine.agr"
+   AnimInstance "{CD76B2501A263ED9}Assets/Weapons/Explosives/workspace/M15AT_weapon.asi"
+   AnimInjection AnimationAttachmentInfo "{631B71C010A885AF}" {
+    AnimGraph "{0292B12F97C52891}Assets/Weapons/Explosives/workspace/M15AT_mine.agr"
+    AnimInstance "{6B45479C2EB8C5AA}Assets/Weapons/Explosives/workspace/M15AT_player.asi"
+    BindingName "Heavy"
+   }
+   BindWithInjection 1
+   AnimCommandsToBind {
+   }
+   AutoVariablesBind 1
+   AnimVariablesToBind {
+   }
+  }
+ }
+ ProjectileModel "{EF82868170264797}Assets/Weapons/Magazine/9M113/9M113_Missile.xob"
+ CartridgeModel "{2F1CFB3138899EC1}Assets/Weapons/Magazine/9M113/9M113_Object.xob"
+}

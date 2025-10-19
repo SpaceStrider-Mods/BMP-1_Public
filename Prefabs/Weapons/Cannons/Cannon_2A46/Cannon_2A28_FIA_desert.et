@@ -1,0 +1,13 @@
+GenericEntity : "{3AE45A61B121F97B}Prefabs/Weapons/Cannons/Cannon_2A46/Cannon_2A28_base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Materials {
+    MaterialAssignClass "{631E0BEF4A52B3DB}" {
+     SourceMaterial "bmp1_turret"
+     AssignedMaterial "{8C745FCD1E00EF77}Assets/Vehicles/Tracked/BMP1/Data/Desert/FIA/bmp1_turret_FIA_desert.emat"
+    }
+   }
+  }
+ }
+}
